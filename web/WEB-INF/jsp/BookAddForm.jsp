@@ -13,6 +13,16 @@
     <title>Add Book fORM</title>
 </head>
 <body>
-
+<div id="global">
+    <form:form commandName="book" action="book_save" method="post">
+        <fieldset>
+            <legend>Add a Book</legend>
+            <p>
+                <label for="category">Category:</label>
+                <form:select path="category.id" id="category" items="${categories}" itemLabel="name" itemValue="id"/>
+            </p>
+        </fieldset>
+    </form:form>
+</div>
 </body>
 </html>
