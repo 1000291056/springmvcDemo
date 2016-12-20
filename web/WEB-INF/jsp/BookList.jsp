@@ -6,7 +6,6 @@
   Time: 14:31
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Book List</title>
@@ -26,10 +25,10 @@
         <c:forEach items="$(books)" var="book">
             <tr>
                 <td>${book.category.name}</td>
-                <td>${book.category.title}</td>
-                <td>${book.category.isbn}</td>
-                <td>${book.category.author}</td>
-                <td><a href="/book_edit/${book.id}">Edit</td>
+                <td>${book.title}</td>
+                <td>${book.isbn}</td>
+                <td>${book.author}</td>
+                <td><a href="/book_edit/${book.id}">Edit</a>></td>
             </tr>
         </c:forEach>
     </table>

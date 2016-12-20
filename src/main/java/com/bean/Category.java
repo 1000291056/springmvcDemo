@@ -1,9 +1,11 @@
 package com.bean;
 
+import java.io.Serializable;
+
 /**
  * Created by wufeifei on 2016/12/20.
  */
-public class Category {
+public class Category implements Serializable{
     private int id;
     private String name;
 
