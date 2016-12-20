@@ -21,6 +21,10 @@
                 <label for="category">Category:</label>
                 <form:select path="category.id" id="category" items="${categories}" itemLabel="name" itemValue="id"/>
             </p>
+            <p>
+                <label for="title">Title:</label>
+                <form:input path="title" id="title"/>
+            </p>
         </fieldset>
     </form:form>
 </div>
