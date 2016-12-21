@@ -14,7 +14,7 @@
 </head>
 <body>
 <div id="global">
-    <form:form commandName="book" action="book_update" method="post">
+    <form:form commandName="book" action="/book_update" method="post">
         <fieldset>
             <legend>Edit a Book</legend>
             <form:hidden path="id"/>

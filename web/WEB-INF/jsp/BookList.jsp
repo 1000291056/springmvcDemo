@@ -1,4 +1,3 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%--
   Created by IntelliJ IDEA.
   User: wufeifei
@@ -6,6 +5,9 @@
   Time: 14:31
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
 <html>
 <head>
     <title>Book List</title>
@@ -22,7 +24,7 @@
             <th>Author</th>
             <th>&nbsp;</th>
         </tr>
-        <c:forEach items="$(books)" var="book">
+        <c:forEach items="${books}" var="book">
             <tr>
                 <td>${book.category.name}</td>
                 <td>${book.title}</td>
