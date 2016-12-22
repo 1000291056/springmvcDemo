@@ -1,8 +1,9 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: wufeifei
-  Date: 2016/12/16
-  Time: 10:31
+  Date: 2016/12/22
+  Time: 9:08
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -12,27 +13,31 @@
 </head>
 <body>
 <div id="global">
-    <form action="/product_save" method="post">
+    <form:form commandName="product" action="uploadproduct_save" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Add a product</legend>
             <p>
                 <label for="name">Product Name:</label>
-                <input type="text" id="name" name="name" tabindex="1">
+                <form:input path="name" id="name"/>
             </p>
             <p>
                 <label for="description">Product description:</label>
-                <input type="text" id="description" name="description" tabindex="2">
+                <form:input path="description" id="description"/>
             </p>
             <p>
                 <label for="price">Product price:</label>
-                <input type="text" id="price" name="price" tabindex="3">
+                <form:input path="price" id="price"/>
             </p>
             <p>
-                <input id="reset" type="reset" tabindex="4"></input>
+                <label for="image">Product image:</label>
+                <input type="file" name="images[0]" id="image">
+            </p>
+            <p>
+                <input id="reset" type="reset" tabindex="4">
                 <input type="submit" id="submit" value="add a product" tabindex="5">
             </p>
         </fieldset>
-    </form>
+    </form:form>
 </div>
 </body>
 </html>
