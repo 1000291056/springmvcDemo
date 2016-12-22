@@ -12,8 +12,13 @@
 <html>
 <head>
     <title>Save Product</title>
+    <script type="text/javascript">
+        alert("sssssssssss");
+        <%--alert("<%= ${product.name}%>");--%>
+    </script>
+
     <%
-        Product p=new Product();
+        Product p = new Product();
     %>
 </head>
 <body>

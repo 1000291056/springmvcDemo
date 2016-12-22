@@ -13,10 +13,11 @@
 <head>
     <meta charset="utf-8">
     <title>首页</title>
+
 </head>
 <body>
-<frameset>
-
+<frameset columns="120,*">
+    <frame>
 </frameset>
 </body>
 </html>
