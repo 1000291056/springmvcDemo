@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/java_api/CollecttionTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/java_api/IOTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/java_api/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/CRunnable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/ClassMain.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/Goods.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/PRunnable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/errorthought/ConsumeRunnable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/errorthought/Goods.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/errorthought/GoodsManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/errorthought/InterruptTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/errorthought/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/errorthought/ProductRunnable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/errorthought/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/lock/CRunnable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/lock/Goods.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/lock/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/lock/PRunnable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/p_r_test/P.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/p_r_test/ValueObject.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/synchronizedTest/CRunnable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/synchronizedTest/Goods.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/synchronizedTest/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/synchronizedTest/PRunnable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/syncronizedObject/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/syncronizedObject/SyncronizedHolder.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/syncronizedObject/SyncronizedOnject.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/testjoin/Run1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/testjoin/TheadA.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/testjoin/ThreadB.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/threadlocal/Run.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/threadtest/threadlocal/Tools.java" charset="GBK" />
+  </component>
+</project>
