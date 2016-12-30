@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mybatis.dao.UserDao">
+
+    <select id="getUserById" parameterType="int" resultType="com.bean.User">
+      SELECT DISTINCT * FROM USER WHERE id=#{id}
+   </select>
+    <select id="getUsers" resultType="com.bean.User"  >
+        SELECT * FROM USER
+    </select>
+    <insert id="insert" parameterType="com.bean.User">
+        INSERT INTO USER (name,password,innetAddress) VALUES (#{name},#{password},#{innetAddress})
+    </insert>
+    <insert id="insertUsers" parameterType="com.bean.User">
+        INSERT INTO USER (name,password,innetAddress) VALUES
+        <foreach collection="list" index="index" item="item" separator="," >
+            (#{item.name},#{item.password},#{item.innetAddress})
+        </foreach>
+
+    </insert>
+</mapper>
