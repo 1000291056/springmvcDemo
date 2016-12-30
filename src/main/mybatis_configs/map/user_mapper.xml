@@ -21,4 +21,7 @@
         </foreach>
 
     </insert>
+    <update id="update" parameterType="com.bean.User">
+            UPDATE USER SET name=#{name},password=#{password},innetAddress=#{innetAddress} WHERE name=#{name}
+    </update>
 </mapper>
