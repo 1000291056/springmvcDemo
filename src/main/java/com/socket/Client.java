@@ -9,20 +9,18 @@ import java.util.concurrent.Executors;
 /**
  * Created by wufeifei on 2017/1/11.
  */
-public class Server {
-    private static ServerSocket serverSocket;
+public class Client {
+    private static Socket clentSocket;
     private static ExecutorService executorService = Executors.newFixedThreadPool(10);
-    private static final int port = 8888;
+    private static final int PORT = 8888;
+    private static final String HOST = "10.108.6.89";
 
     public static void main(String[] args) {
         try {
-            serverSocket = new ServerSocket(port);
-            while (true) {
-                Socket socket = serverSocket.accept();//监听端口 接受链接
-                executorService.execute(new ReadTask(socket));
-                executorService.execute(new WriteTask(socket));
+            clentSocket = new Socket(HOST, PORT);
+            executorService.execute(new ReadTask(clentSocket));
+            executorService.execute(new WriteTask(clentSocket));
 
-            }
 
         } catch (IOException e) {
             e.printStackTrace();

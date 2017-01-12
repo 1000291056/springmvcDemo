@@ -14,27 +14,48 @@ public class ReadTask implements Runnable {
     private static final int SIZE = 1024;
     private char[] buffer = new char[SIZE];
     private int count;
+    private boolean isOver = false;
+    private Reader reader;
 
     public ReadTask(Socket socket) {
         this.socket = socket;
+        try {
+            reader = new InputStreamReader(socket.getInputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+            isOver = true;
+        }
     }
 
     @Override
     public void run() {
-        while (true) {
-            try {
-                if (socket == null) {
-                    System.out.println(TAG + "    socket==null");
-                    return;
+        try {
+            while (!isOver) {
+                try {
+
+                    while ((count = reader.read(buffer)) > 0) {
+                        System.out.println("¶ÁÈ¡µ½"+socket.getInetAddress()+"ÏûÏ¢£º" + new String(buffer, 0, count));
+                    }
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    isOver = true;
                 }
-                Reader reader = new InputStreamReader(socket.getInputStream());
-                StringBuilder builder = new StringBuilder();
-                while ((count = reader.read(buffer)) > 0) {
-                    builder.append(new String(buffer, 0, count));
+            }
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-                System.out.println("readmessageï¼š/n" + builder);
-            } catch (IOException e) {
-                e.printStackTrace();
+            }
+            if (socket != null) {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
 
